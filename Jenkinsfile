@@ -9,6 +9,7 @@ pipeline {
          steps {
 
             git 'https://github.com/avanimandloi/mvn_sonar.git'
+            slackSend message: 'Checkout Complete'
 
                         }
 
