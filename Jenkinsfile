@@ -65,6 +65,11 @@ pipeline {
                         }
 
             }
+               post{
+                  always{
+                     slackSend color: 'good',message: 'Hello there'
+                  }
+               }
             
            
 }
