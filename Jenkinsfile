@@ -21,6 +21,7 @@ pipeline {
                               //withSonarQubeEnv('sonar') {
 
                                                 sh '/usr/share/maven/bin/mvn clean verify sonar:sonar -Dmaven.test.skip=true'
+                                                slackSend color: 'good', message: 'Build Success'
 
                                     //}
 
