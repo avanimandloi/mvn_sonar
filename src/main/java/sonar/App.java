@@ -1,5 +1,5 @@
 package sonar;
-
+import java.util.*
 /**
  * Hello world!
  *
@@ -7,7 +7,8 @@ package sonar;
 public class App 
 {
     public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    {   
+        Logger logger = Logger.getLogger(App.class.getName());
+        Logger.log( "Hello World!" );
     }
 }
