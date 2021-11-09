@@ -1,5 +1,5 @@
 package sonar;
-import java.util.*
+import java.util.*;
 /**
  * Hello world!
  *
